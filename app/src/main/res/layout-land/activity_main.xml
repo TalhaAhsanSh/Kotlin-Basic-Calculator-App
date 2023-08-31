@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screenNumberShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/result"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/type"
+        android:textColor="@color/variantRed1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/variantRed1"
+        android:textSize="20sp"
+        android:text="@string/result"
+        android:id="@+id/result"
+        android:layout_above="@id/allButtons"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/allButtons">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstllline"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/clear"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/clear"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/add"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/add"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/sub"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/sub"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/allClear"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/allClear"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondllline"
+            android:layout_below="@id/firstllline"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seven"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/seven"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eight"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/eight"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nine"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/nine"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/multiply"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/multiply"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdllline"
+            android:layout_below="@id/secondllline"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/four"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/four"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/five"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/five"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/six"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/six"
+                style="?android:attr/buttonBarButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/divide"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/divide"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourthllline"
+            android:layout_below="@id/thirdllline"
+            android:layout_centerHorizontal="true"
+
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/one"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/two"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/two"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/three"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/three"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/equal"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/equalTo"
+                android:textColor="#DD2C00"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifthllline"
+            android:layout_below="@id/fourthllline"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:id="@+id/zero"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:text="@string/zero"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decimal"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="15sp"
+                android:text="@string/decimal"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
